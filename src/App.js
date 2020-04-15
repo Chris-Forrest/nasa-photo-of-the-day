@@ -1,5 +1,18 @@
-import React from "react";
+import React,{useState, useEffect } from "react";
 import "./App.css";
+import axios from 'axios'
+
+const url = 'https://api.nasa.gov/#apod'
+const api_key = 'ckNxsCaNbWvDIeJnqcpdPOcwdpw7axlrp3xz4fdD'
+
+axios.get(`${url}?api_key=${api_key}`)
+.then(nasaData =>{
+  return (nasaData)
+})
+.catch( err => {
+  debugger
+})
+
 
 function App() {
   return (
