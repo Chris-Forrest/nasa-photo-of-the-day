@@ -29,6 +29,9 @@ function App() {
     
 
       {nasaData && <Header imageTitle={nasaData.title} />}
+
+
+      {nasaData && <Footer copyright={nasaData.copyright} date={nasaData.date} hdUrl={nasaData.hdurl} />}
       
       </div>
 );
