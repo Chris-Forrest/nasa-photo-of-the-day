@@ -1,9 +1,9 @@
 import React,{useState, useEffect } from "react";
 import "./App.css";
 import axios from 'axios'
-import Header from './components/Header'
-import MainContent from './components/MainContent'
-import Footer from './components/Footer'
+import Header from './components/Header.js'
+import MainContent from './components/MainContent.js'
+import Footer from './components/Footer.js'
 
 
 function App() {
