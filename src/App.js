@@ -4,6 +4,7 @@ import axios from 'axios'
 import Header from './components/Header.js'
 import MainContent from './components/MainContent.js'
 import Footer from './components/Footer.js'
+import styled from 'styled-components'
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
  },[])
 
   return (
-    <div className="App">
+    <Body className="App">
     
 
       {nasaData && <Header imageTitle={nasaData.title} />}
@@ -34,8 +35,14 @@ function App() {
 
       {nasaData && <Footer copyright={nasaData.copyright} date={nasaData.date} hdUrl={nasaData.hdurl} />}
       
-      </div>
+      </Body>
 );
 }
+
+const Body = styled.div `
+background-color:#163763
+
+`
+
 
 export default App;
