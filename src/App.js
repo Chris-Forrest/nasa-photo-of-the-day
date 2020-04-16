@@ -30,6 +30,7 @@ function App() {
 
       {nasaData && <Header imageTitle={nasaData.title} />}
 
+      {nasaData && <MainContent  imageURL={nasaData.url} imageExplanation={nasaData.explanation}/>} 
 
       {nasaData && <Footer copyright={nasaData.copyright} date={nasaData.date} hdUrl={nasaData.hdurl} />}
       
